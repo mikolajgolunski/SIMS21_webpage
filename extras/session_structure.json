@@ -1,0 +1,104 @@
+{
+  //set when logged in
+  "login": string, //user's login
+  "access_type": string, //user's access type (admin, user, etc.)
+  "registered": bool, //if registered for the conference
+  "user_id": int, //id of the user from `users` table in database
+  "person_id": int, //id of the user from `people` table in database
+  "affiliation_id": int, //id of the user's affiliation from `affiliations` table in database
+  "registered": bool, //if user is already registered for conference
+  "VAT_accomp": bool, //if VAT invoice data was already provided for accompanying person(s)
+  "full_name": string,
+  "accomp_nr": int, //how many accompanying persons are registered
+  
+  //set every page
+  "last_site": string, //name of the last site file user visited
+  
+  //special for specific modules START
+  
+  //abstract upload module
+  "authors": [ //abstract's authors
+    { //each author contains:
+      "id": int, //author's id
+      "presenting": bool, //if this is a presenting author
+      "last_name": string, //author's last name
+      "first_name": string, //author's first name
+      "middle_name": string, //author's middle name
+      "full_name": string, //author's full name in the form first_name middle_name last_name
+      "email": string, //author's email
+      "affiliation_id": int, //author's affiliation id
+      
+    },
+  ],
+  "abstract": { //content of the abstract
+    "last_step": int, //check which step of the abstract module was used last TODO: maybe change to last_site?
+    "title": string, //title of the abstract
+    "text": string, //text of the abstract
+    "file": string, //abstract's filename
+    "show_name": string, //abstract's filename showed to the user
+    "topics": [string], //topics chosen for the abstract
+    "type": string, //presentation's type (oral, poster)
+    "award": string, //if the presentation should be in presentation awards' competition
+    
+  },
+  
+  //registration module
+  "register": {
+    "check": bool, //if registration was successfull
+    "excursion_q": bool, //does user wants to go on an excursion at all
+    "excursion1": string, //where to go on an excursion as a first pick
+    "excursion2": string, //where to go on an excursion as a second pick
+    "dinner_q": bool, //does user wants to be at the dinner
+    "dinner": string, //type of dinner for the user
+    "type": string, //what is the type of registration (student, regular, invited, etc.)
+    "short_course": bool, //does user take part in short course
+    "additional_info": string, //any additional info from user
+    
+  },
+  
+  //accomanying person registration module
+  "accomp": {
+    "excursion_q": bool, //does user wants to go on an excursion at all
+    "excursion1": string, //where to go on an excursion as a first pick
+    "excursion2": string, //where to go on an excursion as a second pick
+    "dinner_q": bool, //does user wants to be at the dinner
+    "dinner": string, //type of dinner for the user
+    "additional_info": string, //any additional info from user
+    "invoice": bool,
+    "VAT_nr": string,
+    "same_affiliation": bool,
+    "VAT_name": string,
+    "VAT_street": string,
+    "VAT_zipcode": string,
+    "VAT_city": string,
+    "VAT_country": string,
+    "VAT_state": string,
+    "VAT_affiliation": int,
+    
+  },
+  
+  //user registration module
+  "registration": {
+    "affiliation1": string,
+    "affiliation2": string,
+    "country": string,
+    "state": string,
+    "city": string,
+    "street": string,
+    "zipcode": string,
+    "last_name": string,
+    "first_name": string,
+    "middle_name": string,
+    "title": string,
+    "email": string,
+    "username": string,
+    
+  },
+  
+  //special for specific modules END
+  
+  //other
+  "next": bool, //generic flag if module leads to next page
+  "fee_type": string, //personal or accomp
+  
+}

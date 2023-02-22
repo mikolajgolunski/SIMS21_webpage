@@ -1,0 +1,17 @@
+Redirect 301 /grants /grants.php
+Redirect 301 /short_course /short_course.php
+Redirect 301 /create_account /create_account.php
+Redirect 301 /industrial /industrial.php
+Redirect 301 /important /important.php
+Redirect 301 /invited /invited.php
+Redirect 301 /fees /fees.php
+Redirect 301 /general /general.php
+
+Redirect 307 /accepted /accepted.php
+Redirect 307 /rejected /rejected.php
+
+php_flag display_errors on
+php_value error_reporting 2039
+
+php_value upload_max_filesize 5M
+php_value session.gc_maxlifetime 21600

@@ -1,0 +1,529 @@
+<div id="info">
+  <div id="side_icons">
+    <a href="#" onclick="PrintElem('content')" title="Print page">
+      <span class="fa-stack">
+        <span class="fa fa-square-o fa-stack-2x"></span>
+      <span class="fa fa-print fa-stack-1x"></span>
+      </span>
+    </a>
+    <a href="https://www.linkedin.com/company/sims21" target="_blank" title="LinkedIn">
+      <span class="fa-stack">
+        <span class="fa fa-square-o fa-stack-2x"></span>
+        <span class="fa fa-linkedin fa-stack-1x"></span>
+      </span>
+    </a>
+    <a href="https://www.facebook.com/SIMS-21-700685283440275/" target="_blank" title="Facebook">
+      <span class="fa-stack">
+        <span class="fa fa-square-o fa-stack-2x"></span>
+        <span class="fa fa-facebook fa-stack-1x"></span>
+      </span>
+    </a>
+    <a href="https://plus.google.com/u/2/105297199948138916052" target="_blank" title="Google+">
+      <span class="fa-stack">
+        <span class="fa fa-square-o fa-stack-2x"></span>
+        <span class="fa fa-google-plus fa-stack-1x"></span>
+      </span>
+    </a>
+    <a href="https://twitter.com/SIMS21_Krakow" target="_blank" title="Twitter">
+      <span class="fa-stack">
+        <span class="fa fa-square-o fa-stack-2x"></span>
+        <span class="fa fa-twitter fa-stack-1x"></span>
+      </span>
+    </a>
+  </div>
+  <div id="slidewrap">
+    <div id="slideshow" style="display: block; position: relative; width: 180px;">
+    </div>
+    <div id="loadingDiv"></div>
+  </div>
+  <script type="text/javascript">
+    window.RokSlideshowPath = '';
+    var myshow;
+    window.addEvent('load', function() {
+      var imgs = [];
+      var imag = [];
+
+      imgs.push({
+        file: 'img/slides/barbakan.jpg',
+        title: 'Barbakan',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/bracka.jpg',
+        title: 'Bracka Street',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/brama_florianska.jpg',
+        title: 'Florian\'s Gate',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/brama_florianska2.jpg',
+        title: 'Florian\'s Gate',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/bulwary2.jpg',
+        title: 'Vistula Riverbanks',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/bulwary3.jpg',
+        title: 'Vistula Riverbanks',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/collegium_novum.jpg',
+        title: 'Collegium Novum JU',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/collegium_novum2.jpg',
+        title: 'Collegium Novum JU',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/collegium_novum3.jpg',
+        title: 'Collegium Novum JU',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/cracow_arena.jpg',
+        title: 'Tauron Arena',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/fais.jpg',
+        title: 'Institute of Physics',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/fontanna_szczepanski.jpg',
+        title: 'Szczepanski Square',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/ghetto.jpg',
+        title: 'Ghetto',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/grodzka.jpg',
+        title: 'Grodzka Street',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/icm.jpg',
+        title: 'Conference Center',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/kampus.jpg',
+        title: 'Institute of Physics JU',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/ghetto.jpg',
+        title: 'Ghetto',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/kazimierz1.jpg',
+        title: 'Jewish District',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/kazimierz2.jpg',
+        title: 'Jewish District',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/kopiec1.jpg',
+        title: 'Kopiec Kosciuszki',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/kopiec2.jpg',
+        title: 'Kopiec Kosciuszki',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/kopiec3.jpg',
+        title: 'Kopiec Kosciuszki',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/mariacki.jpg',
+        title: 'St. Mary Basilica',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/krakow1.jpg',
+        title: 'City Walls',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/krakow2.jpg',
+        title: 'Main Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/krakow3.jpg',
+        title: 'Vistula Boulevards',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/krakow4.jpg',
+        title: 'Panorama of Krakow',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/krakow5.jpg',
+        title: 'Fontaine',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/mury1.jpg',
+        title: 'City Walls',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/mury2.jpg',
+        title: 'City Walls',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/piotrapawla.jpg',
+        title: 'St Peter&Paul Church',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/planty1.jpg',
+        title: 'Planty Park',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/planty2.jpg',
+        title: 'Planty Park',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/przegorzaly.jpg',
+        title: 'Przegorzaly Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/rynek2.jpg',
+        title: 'Main Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/rynek3.jpg',
+        title: 'Main Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/rynek4.jpg',
+        title: 'Main Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/rynek6.jpg',
+        title: 'Main Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/RynekN1.jpg',
+        title: 'Main Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/rynekN5.jpg',
+        title: 'Main Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/slowacki.jpg',
+        title: 'Slowacki Theater',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/slowacki2.jpg',
+        title: 'Slowacki Theater',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/rynek_podgorski1.jpg',
+        title: 'Podgorski Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/rynek_podgorski2.jpg',
+        title: 'Podgorski Market',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/st_andrzej.jpg',
+        title: 'St Andrew Church',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/auditorium.jpg',
+        title: 'Auditorium Maximum',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/sukiennice3.jpg',
+        title: 'City Cloth Hall',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/sukiennice4.jpg',
+        title: 'City Cloth Hall',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/sukienniceN1.jpg',
+        title: 'City Cloth Hall',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/sukienniceN2.jpg',
+        title: 'City Cloth Hall',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wawel1.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wawel2.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wawel4.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wawel5.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wawel6.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wawel7.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wawel8.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/wierzynek.jpg',
+        title: 'Wierzynek Restaurant',
+        desc: '',
+        url: ''
+      });
+
+      var length = imgs.length;
+      for (i = 0; i < 10; i++) {
+        //        var j = 0;
+        var start = Math.floor(Math.random() * length);
+        //        if(i > 0) {
+        //          while(j < i) {
+        //           if(imgs[start] === imag[j]) {
+        //             start = Math.floor( Math.random() * length );
+        //             j = 0;
+        //             continue;
+        //           }
+        //           j++;
+        //          }
+        //        }          
+        imag[i] = imgs[start];
+      }
+      myshow = new Slideshow('slideshow', {
+        type: 'combo',
+        showTitleCaption: 1,
+        captionHeight: 15,
+        width: 180,
+        pan: 0,
+        zoom: 0,
+        loadingDiv: 1,
+        resize: true,
+        duration: [2000, 15000],
+        transition: Fx.Transitions.Expo.easeOut,
+        images: imag,
+        path: ''
+      });
+      myshow.caps.h2.setStyles({
+        color: '#fff',
+        fontSize: '10px'
+      });
+      myshow.caps.p.setStyles({
+        color: '#ccc',
+        fontSize: '9px'
+      });
+    });
+  </script>
+  <div class="clr"></div>
+
+  <div class="side_txt">
+    <div id="news">
+      <h1>Announcements</h1>
+      <ul>
+	<li>
+	<h2>13 January 2018</h2>
+	<a href="../obituaries.php">Sad news</a></br>
+	</li>
+	<li>
+	<h2>22 September 2017</h2>
+	Photos taken during the conference can be found <a href="../photos.php">here</a>.</br></br>
+	A movie from the Banquet is still to come.
+	</li>
+	
+    <li>
+	<h2>15 September 2017</h2>
+        <span style="color: red; font-weight: bold;">SIMS XXII</span></br>20-25 October 2019</br>Kyoto, Japan
+	</li>
+<?php
+/*
+	<li>
+        <h2>2 July 2017</h2>
+        Conference program was published at <I>Scientific Program -> Schedule</I>
+        </li>
+	<li>
+        <h2>11 August 2017</h2>
+        Please do not postpone your visa application to the last moment.
+        </li>
+	<li>
+	<h2>15 June 2017</h2>
+        Call for new IC members. Details <a href="elections.php">here</a>.
+        </li>
+        <li>
+        <h2>13 June 2017</h2>
+        Rooms at the Radisson hotel will not be offered after 19 June</a>.
+        </li>
+        <li>
+          <h2>16 January 2017</h2>
+          <a href="../resources/Flyer_SIMS21.pdf" download>Conference Flyer</a></br>
+          <a href="../resources/Industrial_Session_Flyer.pdf" download>Industrial Session Flyer</a>
+        </li>
+*/
+?>
+      </ul>
+    </div>
+    
+    <div id="sponsors-side">
+      <h1>Sponsors</h1>
+
+      <h2>Diamond</h2>
+      <ul>
+        <li>
+          <a href="http://www.iontof.com" target="_blank"><img src="../img/sponsors/iontof_logo.jpg" width="160"></a>
+        </li>
+      </ul>
+
+      <h2>Platinum</h2>
+      <ul>
+        <li>
+          <a href="http://www.cameca.com" target="_blank"><img src="./img/sponsors/CAMECA.jpg" width="160"></a>
+        </li>
+        <li>
+          <a href="http://www.ionoptika.com" target="_blank"><img src="./img/sponsors/ionoptika.JPG" width="160"></a>
+        </li>
+        <li>
+          <a href="http://www.phi.com" target="_blank"><img src="./img/sponsors/PHI_logo.jpg" width="160"></a>
+        </li>
+      </ul>
+
+      <h2>Gold</h2>
+      <ul>
+         <li>
+          <a href="http://www.hidenanalytical.com" target="_blank"><img src="./img/sponsors/Hiden Logo.JPG"></a>
+        </li>
+          <a href="http://www.kla-tencor.com/" target="_blank"><img src="./img/sponsors/KLA.png"></a>
+
+        <li>
+          <a href="http://www.oregon-physics.com" target="_blank"><img src="./img/sponsors/Oregon.gif"></a>
+        </li>
+        <li>
+          <a href="http://www.smoluchowski.fis.agh.edu.pl/" target="_blank"><img src="./img/sponsors/Know_baner_small.jpg"></a>
+        </li>
+        <li>
+          <a href="http://www.saiman.co.uk/" target="_blank"><img src="./img/sponsors/SAI.jpg" width="80"></a>
+        </li>
+      </ul>
+
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>

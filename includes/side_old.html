@@ -1,0 +1,135 @@
+<div id="info">
+  <div id="side_icons">
+    <a href="#" onclick="PrintElem('content')">
+      <span class="fa-stack">
+        <span class="fa fa-square-o fa-stack-2x"></span>
+        <span class="fa fa-print fa-stack-1x"></span>
+      </span>
+    </a>
+    <span class="fa-stack" style="color: #b3b3b3;">
+      <span class="fa fa-square-o fa-stack-2x"></span>
+      <span class="fa fa-facebook fa-stack-1x"></span>
+    </span>
+    <span class="fa-stack" style="color: #b3b3b3;">
+      <span class="fa fa-square-o fa-stack-2x"></span>
+      <span class="fa fa-linkedin fa-stack-1x"></span>
+    </span>
+    <span class="fa-stack" style="color: #b3b3b3;">
+      <span class="fa fa-square-o fa-stack-2x"></span>
+      <span class="fa fa-google-plus fa-stack-1x"></span>
+    </span>
+    <span class="fa-stack" style="color: #b3b3b3;">
+      <span class="fa fa-square-o fa-stack-2x"></span>
+      <span class="fa fa-twitter fa-stack-1x"></span>
+    </span>
+  </div>
+  <div id="slidewrap">
+    <div id="slideshow" style="display: block; position: relative; width: 180px;">
+      <div style="display: block; overflow: hidden; position: relative; width: 180px;">
+        <img src="img/slides/17.jpg" title="Radisson Hotel" alt="" style="display: block; position: absolute; left: auto; top: -2px; z-index: 84; width: 180px; visibility: visible; zoom: 1; opacity: 1; cursor: default; bottom: auto; right: 0px;">
+        <img src="img/slides/3.jpg" title="Florian&#39;s Gate" alt="" style="display: block; position: absolute; left: auto; top: -2px; z-index: 83; width: 180px; visibility: visible; zoom: 1; opacity: 1; cursor: default; bottom: auto; right: 0px;">
+        <div class="captionDiv" style="visibility: visible; zoom: 1; opacity: 0.7; position: absolute; width: 100%; margin: 0px; left: 0px; bottom: 0px; height: 15px; color: rgb(255, 255, 255); text-indent: 0px; z-index: 168; background: rgb(51, 51, 51);">
+          <h2 class="captionTitle" style="color: rgb(255, 255, 255); padding: 0px; font-size: 10px; margin: 2px 5px; font-weight: bold;">Radisson Hotel</h2>
+          <p class="captionDescription" style="padding: 0px; font-size: 9px; margin: 2px 5px; color: rgb(204, 204, 204);"></p>
+        </div>
+      </div>
+    </div>
+    <div id="loadingDiv"></div>
+  </div>
+  <script type="text/javascript">
+    window.RokSlideshowPath = '';
+    var myshow;
+    window.addEvent('load', function() {
+      var imgs = [];
+      imgs.push({
+        file: 'img/slides/17.jpg',
+        title: 'Radisson Hotel',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/14.jpg',
+        title: 'Old Town Hall',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/31.jpg',
+        title: 'Wawel Castle',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/22.jpg',
+        title: 'St Andrew Church',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/21.jpg',
+        title: 'St. Peter and Paul Church',
+        desc: '',
+        url: ''
+      });
+      imgs.push({
+        file: 'img/slides/3.jpg',
+        title: 'Florian\'s Gate',
+        desc: '',
+        url: ''
+      });
+      myshow = new Slideshow('slideshow', {
+        type: 'combo',
+        showTitleCaption: 1,
+        captionHeight: 15,
+        width: 180,
+        pan: 0,
+        zoom: 0,
+        loadingDiv: 1,
+        resize: true,
+        duration: [2000, 15000],
+        transition: Fx.Transitions.Expo.easeOut,
+        images: imgs,
+        path: ''
+      });
+      myshow.caps.h2.setStyles({
+        color: '#fff',
+        fontSize: '10px'
+      });
+      myshow.caps.p.setStyles({
+        color: '#ccc',
+        fontSize: '9px'
+      });
+    });
+  </script>
+  <div class="clr"></div>
+
+  <div class="side_txt">
+    <div id="companies">
+      <h1 class="important">Conference organized under the auspices of:</h1>
+      <ul>
+        <li>
+          <h2>IUVSTA</h2>
+          <a href="http://www.iuvsta.org/" target="_blank"><img src="./img/logo_iuvsta.gif" alt="IUVISTA logo"></a>
+        </li>
+        <li>
+          <h2>The Polish Vacuum Society</h2>
+          <a href="http://www.ptp.pwr.wroc.pl/index.php?glowna=polvac" target="_blank"><img src="./img/logo_ptp.jpg" alt="PTP logo"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="news">
+      <h1 class="important">Announcements</h1>
+      <ul>
+        <li>
+          <h2>16 September 2015</h2>
+          <a href="first_announcement.php">First announcement</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <hr>
+    <img src="./img/smok_.png" alt="SIMS21 in Krak&oacute;w dragon." style="width:150px;">
+  </div>
+</div>

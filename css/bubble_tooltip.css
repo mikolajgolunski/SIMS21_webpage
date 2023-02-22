@@ -1,0 +1,44 @@
+#bubble_tooltip {
+  width: 15em;
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#bubble_tooltip .bubble_middle {
+  position: relative;
+  background-color: white;
+}
+
+#bubble_tooltip .bubble_middle div {
+  padding-left: 1em;
+  padding-right: 1.5em;
+  position: relative;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-align: justify;
+}
+
+#bubble_tooltip2 {
+  width: 1em;
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+
+#bubble_tooltip2 .bubble_middle2 {
+  position: relative;
+  background-color: white;
+}
+
+#bubble_tooltip2 .bubble_middle2 div {
+  height: 1em;
+  padding-left: 0em;
+  padding-right: 0em;
+  position: relative;
+  font-size: 4em;
+  line-height: 1em;
+  text-decoration: none;
+  text-align: justify;
+}
