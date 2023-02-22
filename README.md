@@ -2,7 +2,7 @@
 
 A conference portal with many pages, newsletter subscription and unsubscription, user registration, registration for the conference including uploading abstracts, user panel showing most needed information for a registered user, abstracts viewer, administration panels allowing for relatively easy interaction with most of the data gathered, and probably a few more features that I cannot remember at the moment.
 
-Server side done in PHP. Database in MySQL. Front side in HTML and CSS with some bits in Javascript.
+Server side done in PHP. Database in MySQL. Front side in HTML and CSS with some bits in Javascript. I zipped 3rd party modules in "extras" folder as I didn't use Composer or anything like that and I don't want them to be a pain to upload and download.
 
 Texts and images provided by the conference organizers, design done mainly by organizers with my help, everything else done by me alone from scratch (with some modifications added by conference organizers).
 
